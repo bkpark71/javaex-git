@@ -10,9 +10,6 @@ public class InputOutput {
 
     String s = scanner.next();
     System.out.println("s = " + s);
-//    String s = scanner.nextLine();
-//    int i2 = Integer.parseInt(s);
-//    System.out.println(i2);
 
     int a = 1_000_000;
     int b = 2_000_000;
