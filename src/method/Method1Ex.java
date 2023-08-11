@@ -10,7 +10,7 @@ public class Method1Ex {
 //    }
     System.out.printf("sum(1~10) = %d\n", sum(1, 10L));
     System.out.printf("sum(10~100) = %d\n", sum(10, 100L));
-    System.out.printf("sum(100~1000) = %d\n", sum(1_000_000_000, 2_000_000_000));
+    System.out.printf("sum(100~1000) = %d\n", sum(100,1000));
   }
 
   static long sum(long num1, long num2) {

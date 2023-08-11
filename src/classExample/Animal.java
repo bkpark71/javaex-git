@@ -13,13 +13,30 @@ class Animal {
 }
 
 class Bird extends Animal{
-  void 헤엄친다(){
-    System.out.println("헤엄친다");
+  @Override
+  void 움직인다() {
+//    super.움직인다();
+    System.out.println("날아간다.");
   }
+  //  void 헤엄친다(){
+//    System.out.println("헤엄친다");
+//  }
 }
 
 class Tiger extends Animal{
-  void 달린다(){
-    System.out.println("달린다");
+  @Override
+  void 움직인다() {
+//    super.움직인다();
+    System.out.println("달린다.");
+  }
+  //  void 달린다(){
+//    System.out.println("달린다");
+//  }
+}
+
+class Fish extends Animal {
+  @Override
+  void 움직인다() {
+    System.out.println("헤엄친다.");
   }
 }
