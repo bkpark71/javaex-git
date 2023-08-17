@@ -33,11 +33,11 @@ class Phone{
 class Telephone extends Phone {
   private String when;
 
-  public Telephone(String name){
-    super(name);
+  public Telephone(String owner){
+    super(owner);
   }
-  public Telephone(String name, String when){
-    this(name);
+  public Telephone(String owner, String when){
+    this(owner);
     this.when = when;
   }
   void autoAnswering(){
@@ -48,12 +48,8 @@ class Telephone extends Phone {
 class SmartPhone extends Telephone {
   private String game;
 
-  public SmartPhone(String name){
-    super(name);
-  }
-
-  public SmartPhone(String name, String game){
-    this(name);
+  public SmartPhone(String owner, String game){
+    super(owner);
     this.game = game;
   }
   void playGame(){

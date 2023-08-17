@@ -6,7 +6,8 @@ public class OverrideTest {
     c.show();
 
     System.out.println();
-    Vehicle v = c;
+    Vehicle v =c;
+        //new Vehicle("파랑",200);
     v.show();
   }
 }
