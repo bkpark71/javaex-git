@@ -46,15 +46,12 @@ class MovablePoint extends Point{
     return xSpeed;
   }
 
+  public int getySpeed() {
+    return ySpeed;
+  }
   @Override
   public String toString() {
     return "좌표 ("+ super.getX() + "," + super.getY() + ") : " +
            "이동속도 (" + xSpeed + " , " + ySpeed + " )";
   }
-
-  public int getySpeed() {
-    return ySpeed;
-  }
-
-
 }
