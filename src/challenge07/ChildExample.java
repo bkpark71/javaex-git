@@ -2,7 +2,9 @@ package challenge07;
 
 public class ChildExample {
   public static void main(String[] args) {
-    Child child = new Child();
+
+    //Child child = new Child();
+    Child child = new Child("홍길동");
   }
 }
 
