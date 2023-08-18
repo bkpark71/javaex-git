@@ -6,10 +6,14 @@ public class Member {
   String password;
   int age;
 
-  public Member(String name, String id){
+  public Member(String name, String id, String password, int age){
     this.name = name;
     this.id = id;
+    this.password = password;
+    this.age = age;
   }
 
-
+  public String findName(String id){
+    return name;
+  }
 }

@@ -2,7 +2,7 @@ package challenge06;
 
 public class MemberService {
   boolean login(String id, String password) {
-    if(id.equals("hong") && password.equals("12345")){
+    if(id.equals("kim") && password.equals("qwert")){
       return true;
     }
     return false;
