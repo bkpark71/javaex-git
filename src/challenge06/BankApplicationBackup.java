@@ -74,7 +74,7 @@ public class BankApplicationBackup {
       if(bankAccounts[i] == null) {
         break;
       } else {
-        System.out.printf("%s %s %d \n",
+        System.out.printf("계좌번호 : %s, 예금주 : %s, 잔액 : %d \n",
             bankAccounts[i].getAccountNo(),
             bankAccounts[i].getAccountOwner(),
             bankAccounts[i].getBalance());
