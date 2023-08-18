@@ -1,12 +1,29 @@
 package challenge06;
 
-public class Account {
+public class BankAccount {
   private final int MIN_VALUE = 0;
-  private final int MAX_VALUE = 1_000_000;
   private int balance;
+  private String accountNo;
+  private String accountOwner;
+
+  public String getAccountNo() {
+    return accountNo;
+  }
+
+  public void setAccountNo(String accountNo) {
+    this.accountNo = accountNo;
+  }
+
+  public String getAccountOwner() {
+    return accountOwner;
+  }
+
+  public void setAccountOwner(String accountOwner) {
+    this.accountOwner = accountOwner;
+  }
 
   public void setBalance(int balance) {
-    if(balance >= MIN_VALUE && balance <= MAX_VALUE){
+    if(balance >= MIN_VALUE){
       this.balance = balance;
     }
   }
@@ -18,7 +35,7 @@ public class Account {
   public void withdraw(int money) {
     if(money >= 0) {
       int remains = balance - money;
-      if(remains >= MIN_VALUE && remains <= MAX_VALUE)
+      if(remains >= MIN_VALUE)
       {
         balance = remains;
       }
@@ -28,7 +45,7 @@ public class Account {
   public void deposit(int money) {
     if(money > 0) {
       int remains = balance + money;
-      if(remains >= MIN_VALUE && remains <= MAX_VALUE){
+      if(remains >= MIN_VALUE){
         balance = remains;
       }
     }
