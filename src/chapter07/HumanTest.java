@@ -13,9 +13,9 @@ public class HumanTest {
   }
 }
 
-interface Human{
-  void eat();
-  default void print(){
+interface Human {
+  void eat() ;
+  default void print() {
     System.out.println("인간입니다.");
   }
   static void echo(){
