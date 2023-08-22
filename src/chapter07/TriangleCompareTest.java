@@ -9,7 +9,7 @@ public class TriangleCompareTest {
     Line l1 = new Line(30);
 
     //int res = t1.compareTo(t2);
-    int res = t1.compareTo(l1);
+    int res = t1.compareTo(t2);
     if(res > 0)
       System.out.println(t1 + "삼각형이 더 큽니다.");
     else if(res <0)
